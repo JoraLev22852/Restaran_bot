@@ -7,6 +7,9 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from button import *
 
+from aiogram.client.session.aiohttp import AiohttpSession
+session = AiohttpSession(proxy="http://proxy.server:3128")
+
 BOT_TOKEN = "9244726768:AAG2CseWa9yH25jwlJPYuJ0NAqyfEO_qZe0"
 TOKEN = BOT_TOKEN
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
